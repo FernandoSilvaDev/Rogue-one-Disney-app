@@ -31,8 +31,8 @@
                     min-width: 325px;
                 }
             }
-                
         }
+
     }
 
     &__play {
@@ -44,12 +44,20 @@
             font-size: 34px;
             color: variaveis.$colorTextSecundary;
         }
+
+        @media (max-width: 1023px) {
+            a {
+                margin-right: 12px;
+            }
+        }
     }
     
 
     &__content {
         max-width: 640px;
-        
+        @media (max-width: 1023px) {
+            max-width: 100%;
+        }
 
         p {
             letter-spacing: 1px;
