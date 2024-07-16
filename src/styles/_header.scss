@@ -1,0 +1,133 @@
+@use 'variaveis';
+
+.header {
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+        
+    }
+
+    &__logo {
+        max-width: 80px;
+        width: 100%;
+        margin: 5px;
+        margin-right: 82px;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        
+        &__item {
+            padding: 0 22px;
+
+            a {
+                font-size: 14px;
+                color: variaveis.$colorTextSecundary;
+
+                &:hover {
+                    color: darken(variaveis.$colorTextMain, 1%);
+                }
+                
+            }
+
+            @media (max-width: 1023px) {
+                margin-right: 0px;
+                padding: 0 8px;
+                
+                }
+        }
+    }
+}
+
+.bi {
+    margin-right: 12px;
+
+}
+
+// ________________________________________________________________Cellphone_______________________________________________
+@media (max-width: 768px) {
+
+    .header__links{
+        margin-top: 3.5em;
+        position: fixed;
+        height: 180px;
+        width: 100%;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:end;
+        text-align: center;
+        transition: .3s ease;
+
+        &__item {
+            margin-bottom: 4px;
+        }
+        
+        &.ham-menu--is-active {
+            right: 0;
+        }
+    }
+
+    header nav {
+        padding: 1rem;
+        display: flex;
+    }
+
+    .ham-menu {
+        margin-top: -87px;
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position: relative;
+        
+        span{
+            height: 5px;
+            width: 100%;
+            background-color: variaveis.$colorTextSecundary;
+            border-radius: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .3 ease;
+
+            &:nth-child(1) {
+                top: 25%;
+            }
+
+            &:nth-child(3) {
+                top: 75%;
+            }
+
+        }
+        &--is-active {
+            span {
+                background-color: white;
+                align-items: center;
+            }
+
+            span:nth-child(1) {
+                top: 60%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+    
+            span:nth-child(2) {
+                opacity: 0;
+            }
+    
+            span:nth-child(3) {
+                top: 50%;
+                transform: translate(-50%, 50%) rotate(-45deg);
+            }
+        }
+    }
+}

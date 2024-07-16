@@ -1,0 +1,80 @@
+@use 'variaveis';
+
+.hero {
+    margin-top: -80.53px;
+    padding: 7.6vw 5vw;
+    min-height: 136vh;
+    background-image: url(../images/hero.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1023px) {
+        padding: 45vw 5vw;
+        min-height: 0;
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 768px){
+        margin-top: -113px;
+        padding: 5.6vw;
+        background-image: url(../images/Hero_cellphone.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &__content {
+            margin-top: 350px;
+
+            &__branding {
+                display: flex;
+                justify-content: center;
+                img {
+                    min-width: 325px;
+                }
+            }
+                
+        }
+    }
+
+    &__play {
+        margin-top: 26px;
+        display: flex;
+        align-items: center;
+
+        a {
+            font-size: 34px;
+            color: variaveis.$colorTextSecundary;
+        }
+    }
+    
+
+    &__content {
+        max-width: 640px;
+        
+
+        p {
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            img {
+                max-width: 52px;
+            }
+
+            span {
+                padding: 0 14px;
+            }
+        }
+        
+        &__branding {
+            margin: 40px auto 12px;
+            
+            img {
+                max-width: 40vw;
+            }
+        }
+
+        &__summary {
+            margin: 22px 0;
+        }
+    
+    }
+}

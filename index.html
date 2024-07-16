@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Landing-page-Rogue-One</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="logo">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#"><i class="bi bi-house-door-fill"></i>Home</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#"><i class="bi bi-search"></i></i>Search</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#"><i class="bi bi-plus-lg"></i>Watchilist</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#"><i class="bi bi-star-fill"></i>Originals</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#"><i class="bi bi-film"></i>Movies</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#"><i class="bi bi-tv-fill"></i>Series</a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/logo.png" alt="logo">
+            </div>
+            <p class="text">
+                <img src="./dist/images/Pg13.jpg" alt="PG13">
+                <span>
+                    cc
+                </span>
+                2016 • 2H 13m
+            </p>
+            <p class="text">
+                Sci-fi, Adventure, Action, Fantasy, Drama
+            </p>
+            <div class="hero__play">
+                <button  class="button"><i class="bi bi-play-fill"></i>Play</button>
+            <a href="#"><i class="bi bi-plus-circle"></i></a>
+            <a href="#"><i class="bi bi-people-fill"></i></a>
+            </div>
+            <p class="hero__content__summary text--big">
+                Jyn's father is forcibly taken by the Galactic Empire to help them complete the Death Star. When she grows up, she joins a group of resistance fighters who aim to steal the Empire's blueprints.
+            </p>
+        </div>
+<!-- __________________________________________________________Shows____________________________________________________________________________________ -->
+        <div class="shows">
+            <nav class="shows__tabs">
+                <button data-tab-button="suggested" class="shows__tabs__button shows__tabs__button--is-active">
+                    Suggested
+                </button>
+                <button data-tab-button="details" class="shows__tabs__button2">
+                    Details
+                </button>
+            </nav>
+            <ul data-tab-id="suggested" class="shows__list shows__list--is-active">
+                <list class="shows__list__item">
+                    <a href="#">
+                        <img src="./dist/images/Cards/Detona-ralph.jpg" alt="">
+                    </a>
+                </list>
+                <list class="shows__list__item">
+                    <a href="#">
+                        <img src="./dist/images/Cards/Herbie.png" alt="Herbie">
+                    </a>
+                </list>
+                <list class="shows__list__item">
+                    <a href="#">
+                        <img src="./dist/images/Cards/piratas-do-caribe.png" alt="Pirates Cariben">
+                    </a>
+                </list>
+                <list class="shows__list__item">
+                    <a href="#">
+                        <img src="./dist/images/Cards/tron.png" alt="Tron">
+                    </a>
+                </list>
+                <list class="shows__list__item">
+                    <a href="#">
+                        <img src="./dist/images/Cards/walle.png" alt="Walle">
+                    </a>
+                </list>
+                <list class="shows__list__item">
+                    <a href="#">
+                        <img src="./dist/images/Cards/zootopia_7a25da70.jpeg" alt="Zootopia">
+                    </a>
+                </list>
+                <list class="shows__list__item">
+                    <a href="#">
+                        <img src="./dist/images/Cards/Black-Window.jpg" alt="Back Widow">
+                    </a>
+                </list>
+                <list class="shows__list__item">
+                    <a href="#">
+                        <img src="./dist/images/Cards/New mutants.jpg" alt="Nwe Mutants">
+                    </a>
+                </list>
+            </ul>
+        </div>
+<!-- ___________________________________________________Details_____________________________________________________________________________________________________________________ -->
+        <div data-tab-id="details" class="details">
+           <div class="details__information">
+            <h2 class="title--small">Rogue One</h2>
+            <p>
+                When Rebel forces learn of the Galactic Empire’s new super weapon, the Death Star, they dispatch soldier Jyn Erso and a band of unlikely heroes to find out how to destroy it.
+            </p>
+        <table>
+            <td class="details__information__columm1">
+                <h3>Duration:</h3>
+                <p>2h 13m</p>
+                <h3>Realease Date:</h3>
+                <p>2016</p>
+                <h3>Genre:</h3>
+                <p>Sci-fi, Adventure, Drama, Action, Fantasy</p>
+                <h3>Rating:</h3>
+                <img src="./dist/images/Pg13.jpg" alt="PG13">
+                <h3>Available in the following formats:</h3>
+                <p>4K Ultra • HD • HDR10 • 5.1 </p>
+            </td>
+            <td class="details__information__columm2">
+                <h3>Director:</h3>
+                <p>Gareth Edwards</p>
+                <h3>Starring:</h3>
+                <p>Felicity Jones</p>
+                <p>Diego Luna</p>
+                <p>Donnie Yen</p>
+                <p>Ben Mendelsohn</p>
+                <p>Mdas Mikkelsen</p>
+                <p>Peter Cushing</p>
+                <p>Forest Whitaker</p>
+            </td>
+        </table>
+           </div>
+        </div>
+    </section>
+</body>
+<script src="./dist/js/main.js"></script>
+</html>
